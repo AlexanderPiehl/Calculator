@@ -1,5 +1,5 @@
 class Calculator
-    inputRoute = ("A-E-D")
+    inputRoute = gets.chomp()
     graph = ("AB5,BC4,CE2,EB3,CD8,AE7,AD5,DE6")  
     tmp = []
     @route = 0
@@ -20,10 +20,10 @@ class Calculator
       tmp[i+1] = inputRoute1[i+1]
       j = 0
       while j < graph.size - 2
-        if inputRoute1[i]  == graph1[j]           #für das befindet sich a im array
+        if inputRoute1[i]  == graph1[j]           #fï¿½r das befindet sich a im array
           if inputRoute1[i+1]  == graph1[j+1]     # wenn ja, folgt b im graph arry
             @route += graph1[j+2].to_i          #wieder ja, dann addiere die zahl zu route hinzu
-            i = i + 1                             #index erhöhen, um zu schauen ob es die strecke b-c gibt
+            i = i + 1                             #index erhï¿½hen, um zu schauen ob es die strecke b-c gibt
             j = 0                                 # j wieder auf null um das komplette graph array durch zu suchen
             @found = @found + 1
             else j = j+ 3
