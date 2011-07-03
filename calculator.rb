@@ -15,15 +15,15 @@ class Calculator
     end
         
     i = 0
-    while i < inputRoute.size - 2
+    while i < inputRoute1.size - 2
       tmp[i] = inputRoute1[i]            
       tmp[i+1] = inputRoute1[i+1]
       j = 0
-      while j < graph.size - 2
-        if inputRoute1[i]  == graph1[j]           #f�r das befindet sich a im array
+      while j < graph1.size - 2
+        if inputRoute1[i]  == graph1[j]           #fuer das befindet sich a im array
           if inputRoute1[i+1]  == graph1[j+1]     # wenn ja, folgt b im graph arry
             @route += graph1[j+2].to_i          #wieder ja, dann addiere die zahl zu route hinzu
-            i = i + 1                             #index erh�hen, um zu schauen ob es die strecke b-c gibt
+            i = i + 1                             #index erhoehen, um zu schauen ob es die strecke b-c gibt
             j = 0                                 # j wieder auf null um das komplette graph array durch zu suchen
             @found = @found + 1
             else j = j+ 3
