@@ -15,7 +15,7 @@ class Calculator
     end
         
     i = 0
-    while i < inputRoute1.size - 2
+    while i < inputRoute1.size - 1
       tmp[i] = inputRoute1[i]            
       tmp[i+1] = inputRoute1[i+1]
       j = 0
